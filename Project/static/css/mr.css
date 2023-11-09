@@ -1,0 +1,135 @@
+body
+{
+background-color : #bddfff;
+color : white;
+margin : 0;
+}
+.container
+{
+	height : 800px;
+	width : 80%;
+	padding : 20px;
+	margin-left:100px;
+	margin-top : 50px;
+	box-shadow : 1px 5px 15px 5px gray;
+	border-radius : 9px;
+	background-color: white;
+	color : black;
+	padding-top : 0px;
+	margin-bottom : 50px;
+
+}
+.head
+{
+	height : 50px;
+	width : 100%;
+	box-shadow :0px 2px gray;
+	padding-top:30px;
+	margin :0;
+}
+.btn
+{
+	height : 36px;
+	width : 180px;
+	float : right;
+	margin-right:5px;
+	background-color : white;
+	color : blue;
+	border : none;
+	font-family : verdana;
+	font-size : 15px;
+	transition : 0.3s;
+}
+.btn:hover
+{
+	color : white;
+	background-color: blue;
+	border-radius : 5px;
+}
+.search
+{
+	width : 200px;
+	height : 36px;
+	font-family:verdana;
+	outline : none;
+	border-style : solid;
+	border-width : 1px;
+	border-radius : 5px;
+	text-align : center;
+	float : right;
+	margin-right : 15px;
+}
+.logo
+{
+	color : blue;
+	background-color : white;
+	font-size : 25px;
+	padding-left :0px;
+	margin-left : 0;
+	border:none;
+	font-family : verdana;
+	margin-top : 0;
+	font-weight : bold;
+	padding-top : 0px;
+	margin-bottom : 5px;
+}
+.container2
+{
+	height : 430px;
+	width : 40%;
+	color : black;
+	margin-top : 10px;
+	float : left;
+	font-family : verdana ;
+}
+.container2 img
+{
+	margin-top: 20px;
+	height : 350px;
+	width : 90%;
+	z-index : -1;
+}
+.container2a
+{
+	height : 430px;
+	width : 60%;
+	color : black;
+	float : left;
+	margin-top : 10px;
+	font-family : verdana ;
+}
+.container2a h1
+{
+	color : black;
+	margin-top : 50px;
+}
+.container2a li
+{
+	margin-top : 60px;
+	list-style:none;
+}
+.favorite
+{
+	height : 250px;
+	width : 27%;
+	box-shadow:1px 5px 15px 5px gray;
+	float : left;
+	border-radius : 5px;
+	color : blue;
+	font-family : verdana;
+	margin-left : 35px;
+	transition : 0.3s;
+}
+.favorite p
+{
+	width : 50%;
+	font-size : 20px;
+	font-weight : bold;
+	margin-top : 90px;
+	margin-left : 80px;
+	line-height : 30px;
+}
+.favorite:hover{
+	background-color : blue;
+	color : white;
+}

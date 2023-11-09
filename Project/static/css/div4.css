@@ -1,0 +1,74 @@
+.div4 {
+  margin-top: 120px;
+}
+.div4-containers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.div4-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  width: 370px;
+  box-shadow: 0px 0px 10px rgba(30, 30, 30, 0.4);
+  padding: 40px 0;
+}
+
+.div4-details h2 {
+  color: #250051;
+  font-size: 30px;
+  padding: 0px 30px;
+}
+
+.ratings {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 30px;
+}
+.follow-price {
+  display: grid;
+  grid-template-columns: 1fr 1fr 6fr;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 30px;
+}
+.follow-price div img {
+  height: 25px;
+}
+.follow-price div p {
+  font-size: 14px;
+  color: #b2b2b2;
+}
+.follow-price div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+}
+.follow-price p {
+  font-size: 14px;
+  color: #b2b2b2;
+  text-align: end;
+  display: inline-block;
+}
+.ratings p {
+  font-size: 14px;
+  color: #b2b2b2;
+  text-align: end;
+}
+.checked {
+  color: gold;
+}
+.div4-details img {
+  transition: 0.5s all ease-in-out;
+  justify-self: center;
+}
+
+/*----Hover----*/
+.div4-details:hover img {
+  transform: scale(1.035);
+}

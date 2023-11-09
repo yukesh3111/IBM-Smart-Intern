@@ -1,0 +1,170 @@
+.trip-planner-div1 {
+  background-image: url('/static/Reservationbg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  padding-top: 315px;
+  padding-bottom: 235px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trip-planner-div1-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.trip-planner-div1-container h1,
+.trip-planner-div1-container p {
+  text-align: center;
+}
+.trip-planner-div1-container h1 span {
+  color: aquamarine;
+}
+.trip-planner-div1-container h1 {
+  color: #ffffff;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 85px;
+  margin-bottom: 12px;
+}
+.trip-planner-div1-container p {
+  width: 700px;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 42px;
+}
+.trip-planner-div1-container button {
+  padding: 12px 28px;
+  font-size: 15px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #fff;
+  transition: all 0.15s;
+}
+/*----Hover----*/
+.trip-planner-div1-container button:hover {
+  background-color: aquamarine;
+  color: #2d3092;
+  font-weight: 700;
+}
+
+/*-------Map-----------*/
+.div-map {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 90px;
+}
+.cost-finder {
+  text-align: center;
+}
+.percentage-class {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.trip-planner-div2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 90px 0px;
+}
+.trip-planner-div3 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 90px 0px;
+  background-color: #bcddff;
+}
+
+.trip-planner-div2-container1 {
+  width: 500px;
+  padding: 30px 0px;
+}
+.trip-planner-div2-container1 h1 {
+  margin-bottom: 23px;
+  font-size: 38px;
+}
+.trip-planner-div2-container1 h1 span {
+  color: #2d3092;
+}
+.trip-planner-div2-container1 p {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.trip-planner-flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.bnt-explore {
+  padding: 8px 28px;
+  font-size: 15px;
+  background-color: rgb(45, 48, 141);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.bnt-explore:hover {
+  background-color: rgb(62, 68, 236);
+}
+.div3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.div3-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 20px;
+}
+.div3-details img {
+  height: 65px;
+  justify-self: center;
+}
+.div3-details p {
+  font-size: 24px;
+  font-weight: 700;
+}
+#errormessage {
+  color: red;
+  padding: 10px 0px;
+}
+#errormessage2 {
+  color: red;
+  padding: 30px 0px;
+  text-align: center;
+}
+.back
+{
+  height : 36px;
+  background-color: white;
+  color : #2c2f8c;
+  border:none;
+  float : left;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top :5px;
+  border-radius: 5px;
+}
+.back:hover
+{
+    opacity: 0.5;
+}

@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 112px 0px;
+  background-color: #bddfff;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+* {
+  font-family: Geologica;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login-details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.master-tittle {
+  font-size: 32px;
+  font-weight: normal;
+  text-align: center;
+  color: #030431;
+  margin-bottom: 0;
+}
+.subtittle {
+  font-size: 22px;
+  font-weight: normal;
+  color: rgb(62, 68, 236);
+  margin-top: 20px;
+  cursor: pointer;
+}
+.subtittle:hover {
+    color: red;
+}
+.login-form input {
+  border-radius: 5px;
+  padding: 10px 0px 10px 20px;
+  margin-right: -10px;
+  width: 94%;
+  background-color: white;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0,0,0, 0.5);
+}
+.login-form input::placeholder {
+  color: black;
+  font-weight: bold;
+}
+.login-form input:hover {
+  background-color: transparent;
+  border: 1px solid #030431;
+}
+.login-form button {
+  margin: 15px 0px;
+  border-radius: 25px;
+  padding: 10px;
+  background-color: rgb(45, 48, 141);
+  border: none;
+  color: white;
+  transition: all 0.15s;
+}
+.login-form button:hover {
+  background-color: rgb(62, 68, 236);
+}
+.login-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+.remember {
+  margin-right: 50px;
+  color: #030431;
+}
+.forgot-link {
+  margin-left: 50px;
+  text-decoration: none;
+  color: #030431;
+}
+.forgot-link:hover
+{
+    color : red;
+}
+.others1 {
+  margin-bottom: 10px;
+}
+
+.others2-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.Google {
+  flex: 1;
+  padding: 8px;
+  cursor: pointer;
+  background-color: rgb(45, 48, 141);
+  border: none;
+  margin-right: 2px;
+  color: white;
+  transition: all 0.15s;
+}
+.Google:hover {
+  background-color: rgb(62, 68, 236);
+}
+.facebook {
+  flex: 1;
+  padding: 8px;
+  cursor: pointer;
+  background-color: rgb(45, 48, 141);
+  border: none;
+  margin-left: 2px;
+  color: white;
+  transition: all 0.15s;
+}
+.facebook:hover {
+  background-color: rgb(62, 68, 236);
+}
+.others2 {
+  text-align: center;
+  width: 100%;
+}
+.border {
+  padding: 0px 50px 30px 50px;
+  background-color: white;
+  border-radius: 15px;
+}

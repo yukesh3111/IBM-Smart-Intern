@@ -1,0 +1,93 @@
+body
+{
+	margin:0;
+	background-image:url('/static/ev3.jpg');
+	background-repeat : no-repeat;
+	background-size: cover;
+	font-family : verdana;
+}
+.container
+{
+	color : white; 
+	height: 500px;
+	width : 75%;
+	background-color:#cccccc;
+	border-radius : 10px;
+	margin-top : 50px;
+	margin-left : 150px;
+	box-shadow : 1px 5px 15px 5px gray;
+	padding:10px;
+}
+.text1
+{
+	color :  #2c2f8c; 
+	font-family : verdana;
+	text-align:center;
+	margin-top : 80px;
+	font-weight:bold;
+	font-size : 45px;
+}
+.text2
+{ 
+	color : black;
+	font-family : verdana;
+	line-height : 40px;
+	text-align:center;
+	font-weight:bold;
+	margin-top : 50px;
+	font-size : 19px;
+}
+.text3
+{ 
+	color : #2c2f8c;
+	font-family : verdana;
+	line-height : 40px;
+	text-align:center;
+	width:70%;
+	font-weight:bold;
+	margin-top : 50px;
+	margin-left : 130px;
+	font-size : 15px;
+}
+.btn
+{
+	height : 36px;
+	width : 100px;
+	background-color : #2c2f8c;
+	color : white;
+	border-radius : 5px;
+	border:none;
+	margin-top : 20px;
+	margin-left : 370px;
+}
+.btn1
+{
+	height : 36px;
+	width : 100px;
+	background-color : #2c2f8c;
+	color : white;
+	border-radius : 5px;
+	border:none;
+	margin-top : 20px;
+	margin-left : 10px;
+}
+.btn:hover
+{
+	background-color:white;
+	color : #2c2f8c;
+	border-style:solid;
+	border-width :1px;
+	border-color : #2c2f8c;
+}
+.btn1:hover
+{
+	background-color:white;
+	color : #2c2f8c;
+	border-style:solid;
+	border-width :1px;
+	border-color : #2c2f8c;
+}
+button:active
+{
+	opacity:0.5;
+}

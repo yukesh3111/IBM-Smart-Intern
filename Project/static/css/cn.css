@@ -1,0 +1,65 @@
+body
+{
+	margin:0;
+}
+.container
+{
+	height : 750px;
+	width : 50%;
+	margin-left : 300px;
+	padding-top : 10px;
+	border-radius : 10px;
+	margin-top : 30px;
+	box-shadow : 1px 5px 15px 5px gray;
+}
+.container h1
+{
+	font-family : verdana;
+	text-align:center;
+	color : #2c2f8c;
+	margin-bottom : 50px;
+}
+.container p
+{
+	font-family : verdana;
+	font-size : 18px;
+	width : 60%;
+	float:left;
+	margin-left : 30px;
+}
+.container span
+{
+	font-family:verdana;
+	font-weight: bold;
+	color : #0b0a1c;
+	font-size : 20px;
+	float : left;
+	margin-top : 15px;
+	margin-left : 50px;
+}
+.container label
+{
+	font-size : 10px;
+}
+.btn
+{
+	background-color:#2c2f8c;
+	color : white;
+	height : 36px;
+	width : 150px;
+	margin-top:50px;
+	margin-left: 60px;
+	border:none;
+	border-radius : 5px;
+}
+.btn:hover
+{
+	background-color : white;
+	color : #2c2f8c;
+	border-color : #2c2f8c;
+	border-style : solid;
+	border-width : 1px;
+}
+.btn:active{
+	opacity : 0.5;
+}

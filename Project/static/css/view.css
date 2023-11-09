@@ -1,0 +1,105 @@
+body
+{
+	margin:0;
+}
+.top{
+	height : 65px;
+	width : 100%;
+	margin:0;
+	box-shadow :0px 2px gray;
+}
+.logo
+{
+	margin-top: 12px;
+  margin-left: 30px;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #2c2f8c;
+  font-weight: bold;
+  float: left;
+  background-color: white;
+  cursor: default;
+}
+.sidetop
+{
+	font-family : verdana;
+	font-size : 25px;
+	background-color:#2c2f8c;
+	color: white;
+	height : 45px;
+	margin-top : 0;
+	text-align : center;
+	padding-top : 20px;
+	width : 200px;
+	float : right;
+}
+img 
+{
+	height : 500px;
+	width : 100%;
+}
+.image
+{
+	float : right;
+	margin-right : 10px;
+	height : 500px;
+	width : 40%;
+	margin-top : 50px;
+} 
+.list
+{
+	height : 450px;
+	margin-top : 10px;
+	width : 55%;
+	overflow-x: scroll;
+	float : right;
+	margin-right : 30px;
+	border-radius : 2px;
+}
+.list::-webkit-scrollbar
+{
+	display : none;
+}
+.single
+{
+	height : 150px;
+	width : 100%;
+	border:none;
+	float : right;
+	border-bottom : 2px gray solid;
+}
+.single h3
+{
+	font-family: verdana;
+	margin-left : 5px;
+	float : left;
+	margin-bottom : 15px;
+}
+.single p
+{
+	font-family : verdana;
+	margin-left : 5px;
+	width: 80%;
+	float : left;
+	margin-top :0;
+}
+.single input
+{
+	height : 152px;
+	width : 40px;
+	padding-top : 20px;
+	font-size : 18px;
+	color : white;
+	font-weight : bold;
+	padding-left : 10px;
+	background-color : #2c2f8c;
+	float : right;	
+}
+.single input:hover
+{
+	background-color: red;
+	color : white;
+	border-style:solid;
+	border-color : #2c2f8c;
+	border-width : 1px;
+}

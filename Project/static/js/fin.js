@@ -1,0 +1,4 @@
+function fin()
+{
+	document.write('<html><head><style>h1{text-align:center;margin-top:250px;}</style></head><body><h1>Booked successfully!!!</h1></body></html>')
+}

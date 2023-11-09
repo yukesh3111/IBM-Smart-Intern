@@ -1,0 +1,82 @@
+.div2 {
+  margin: 40px 0px;
+  width: 100%;
+}
+.div2-tittle {
+  text-align: center;
+}
+.div2-tittle p {
+  margin-bottom: 60px;
+  font-size: 20px;
+  color: #3ba0ff;
+}
+.div2-tittle h2 {
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+.div2-container-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 300px;
+  gap: 20px;
+  padding: 60px 20px 60px 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(30, 30, 30, 0.4);
+}
+.div2-container-details h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.div2-container-details p {
+  color: #57667e;
+  font-size: 18px;
+}
+.div2-container-details a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #57667e;
+}
+.div2-upper-container {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.div2-center-class {
+  margin-top: 60px;
+  display: grid;
+  justify-content: center;
+}
+.div2-center-class button {
+  padding: 10px 29px;
+  font-size: 18px;
+  background-color: rgb(45, 48, 141);
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 3px;
+  transition: all 0.15s;
+}
+
+/*---Hover---*/
+.div2-center-class button:hover {
+  background-color: rgb(62, 68, 236);
+}
+
+.div2-container-details:hover .div2-container-details-para {
+  background-color: rgb(45, 48, 141);
+  color: white;
+}
+
+.div2-container-details:hover .div2-container-details-a {
+  background-color: rgb(45, 48, 141);
+  color: white;
+}
+.div2-container-details:hover {
+  background-color: rgb(45, 48, 141);
+  color: white;
+}
