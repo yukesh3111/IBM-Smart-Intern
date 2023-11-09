@@ -1,0 +1,67 @@
+<style>
+    body{
+    background-image : url('/static/ev.jpg');
+    background-repeat : no-repeat;
+    background-size : cover;
+    }	
+    .reg{
+    height : 300px;
+    width : 40%;
+    background-color : grey;
+    color : white;
+    border-radius : 10px;
+    border:none;
+    font-family : verdana;
+    font-size: 12px;
+    padding : 20px;	
+    margin-top : 100px;
+    margin-left : 350;
+    }
+    #sub{
+    margin-left : 70px;
+    background-color : grey;
+    color : white;
+    border-color : white;
+    border-width : 1px;
+    border-style : solid;
+    border-radius : 3px;
+    padding : 7px;
+    }
+    .lab{
+    margin-left : 30px;
+    margin-top : 30px;
+    padding : 30px;
+    }
+    #in{
+    margin-left : 150px;
+    
+    }
+    #sub:hover{
+    background-color : white;
+    color : grey;
+    border-color : white;
+    }
+    #inp
+    {
+    height : 30px;
+    width : 200px;
+    border-radius : 5px;
+    border-style : solid;
+    text-align : center;
+    }
+    input:focus{
+    outline : none;
+    border-color : transparent;
+    }
+    </style>
+    <body>
+    <div class=reg>
+    <form id="in"  action="reg" method="POST">
+    <h1>charge system </h1><br><br>
+    <input type="text" id="inp" name="name" placeholder="name"><br><br>
+    <input type="text" id="inp" name="email" placeholder="email"><br><br>
+    <input type="text" id="inp" name="password" placeholder="set your password"><br><br>
+    <a href="{{url_for('login') }}"><button type="submit" id="sub">submit</button></a>
+    </form>
+    </div
+    </body>

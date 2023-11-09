@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>profile with data and skill</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      body {
+        margin-top: 20px;
+        margin:0;
+        color: #1a202c;
+        text-align: left;
+        background-color: #bcddff;
+      }
+      .main-body {
+        padding: 15px;
+      }
+      .card {
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+          0 1px 2px 0 rgba(0, 0, 0, 0.06);
+      }
+
+      .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 0 solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.6);
+      }
+
+      .card-body {
+        flex: 1 1 auto;
+        min-height: 1px;
+      }
+
+      .gutters-sm {
+        margin-right: -8px;
+        margin-left: -8px;
+      }
+      .padding {
+        padding: 0;
+      }
+      .gutters-sm > .col,
+      .gutters-sm > [class*="col-"] {
+        padding-right: 8px;
+        padding-left: 8px;
+      }
+      .mb-3,
+      .my-3 {
+        margin-bottom: 1rem !important;
+      }
+
+      .bg-gray-300 {
+        background-color: #e2e8f0;
+      }
+      .h-100 {
+        height: 100% !important;
+      }
+      .shadow-none {
+        box-shadow: none !important;
+      }
+      .right-side {
+        width: 700px;
+      }
+      .padding {
+        padding: 25px;
+      }
+      .tittle-details {
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+      .back
+      {
+        height : 36px;
+        background-color: white;
+        color : #2c2f8c;
+        border:none;
+        font-size: 30px;
+        font-weight: bold;
+        border-radius: 5px;
+        }
+      .back:hover
+      {
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" style="margin-left: 280px;">
+      <div class="main-body">
+        <div class="row gutters-sm">
+          <div class="right-side">
+            <div class="col-md-8">
+              <div class="card mb-3 right-side">
+                <div class="card-body right-side">
+                  <a href="home"><input type="submit" class="back" value="&larr;"></a>
+                  <h3 class="tittle-details">Personal Details</h3>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">User Name</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">{{name}}</div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Email</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      {{mail}}
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Phone no</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">{{contact}}</div>
+                  </div>
+                  <hr />
+
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Address</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      {{location}}
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-8 rightside">
+              <div class="card mb-3 right-side">
+                <div class="card-body right-side">
+                  <h3 class="tittle-details">Vehicle Details</h3>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Brand</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">{{brand}}</div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Model</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">{{model}}</div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Identification no</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">{{vin}}</div>
+                  </div>
+                  <hr />
+
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Battery Capacity</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">{{battery}}</div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Connector Type</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      {{port}}
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

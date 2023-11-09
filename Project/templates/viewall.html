@@ -1,0 +1,13 @@
+<html>
+<head>
+<link rel="stylesheet"  href="/static/css/view.css">
+</head>
+<body>
+<div class="top"><span class="logo">Plug & Power</span><span class="sidetop">View All</span></div>
+<div class="image"><img src="/static/charge.jpg"></div>
+{%with ab=list%}
+<div class="list">{%for i in range(0,items)%}
+<div class="single">{%for j in range(0,3)%}{%if j==0%}<form action="part" method="POST"><input type="submit" value="{{i+1}}" name="sub"></input></a><h3>{{ab[i][j]}}</h3>{%elif j==1%}<p>{{ab[i][j]}}<br>
+<br>{%else%} port type : {{ab[i][j]}}</p>{%endif%}{%endfor%}</div>{{j}}{%endfor%}</div>{%endwith%}
+</body>
+</html>

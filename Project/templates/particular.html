@@ -1,0 +1,46 @@
+<html>
+<head>
+<link rel="stylesheet" href="/static/css/part.css">
+</head>
+<body>
+</script>
+<div class="top"><h1>{{a}}</h1></div>
+<div class="main">
+<div class="container"><h1>Details</h1><span>Location : </span>
+<p>{{b}}</p>
+<span>Contact : </span>
+<p>{{c}}</p>
+<span> Slots : </span>
+<p>{{d}}</p>
+<span>Port : </span>
+<p>{{e}}</p><a href="fav"><button>Add to favourite</button></a></div>
+<div class="right">
+<p>{{abc}}</p>
+<form class="fm" action="resconfirm" method="POST">
+<input type="text" value="{{f}}" style="display:none;" name="name" required>
+<label for="date">Date</label><br><br>
+<input type="Date" name="date" required>
+<div>
+<div class="tm">
+<label for="time">Time</label><br><br>
+<input type="text" name="time" placeholder="hr:min:sec(24hrs)" required></div>
+<div class="tm" style="margin-left : 40px;">
+<label for="units">Units</label><br><br>
+<input type="Text" name="units" placeholder="Enter the Units needed" required>
+</div>
+<label for="port">Port</label><br><br>
+<input type="text" name="port" placeholder="Enter port type as shown in details" required>
+<label for="slot">Slot</label><br><br>
+<select name="slot" required>
+<option value="">Select Slot</option>
+{%for i in range(1,d+1)%}
+<option value="{{i}}">{{i}}</option>
+{%endfor%}
+</select>
+</form>
+<a href="confirm"><button class="btn">Reserve</button></a>
+</div>
+<div class="right1"><h3>Slots Already Booked!!!</h3></div>
+</div>
+</body>
+</html>

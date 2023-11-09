@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Favorite</title>
+    <link rel="stylesheet" href="/static/css/view-favorite.css" />
+    <link rel="stylesheet" href="/static/css/general.css" />
+    <link rel="stylesheet" href="/static/css/header-footer.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sen&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="top">
+      <a href="home"><button class="back">&larr;</button></a>
+      <span class="logo">Plug & Power</span>
+    </div>
+    <div class="favorite-container">
+      <div class="favorite-tittle">
+        <h1>Favorite Stations</h1>
+      </div>
+      <div>
+        <table class="favorite">
+          <tr>
+            <th>Station ID</th>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Phone no</th>
+            <th>Slots</th>
+            <th>Remove</th>
+            <th>Book</th>
+          </tr>
+          {%with a=l%}
+          {%for i in range(0,n)%}
+          <tr>
+            {%for j in range(1,6)%}
+            <td>{{a[i][j]}}</td>
+            {%endfor%}
+            <td><form action="favdelt" method="POST"><a href="favdelt"><button name="del" value="{{i}}">Remove</button></form></td>
+              <td><form action="favins" method="POST"><a href="favins"><button name="del" value="{{i}}">Book</button></form></td> 
+          </tr>
+          {%endfor%}
+          {%endwith%}
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="/static/css/r1.css">
+	</head>
+	<body>
+		<h3 style="margin-left: 500px; color : blue; font-family: Verdana, Geneva, Tahoma, sans-serif;">{{abc}}</h3>
+		<form class="fm" action="register" method="POST">
+		<h1 class="head">Registration Form</h1>
+		<p class="par">Personal Details</p>
+		<div class="l1">
+		<label  for="name">Full Name</label><br><br>
+		<input  type="text" name="name" placeholder="Name"></div>
+		<div class="l2">
+		<label  for="email">E-mail</label><br><br>
+		<input  type="text" name="email" placeholder="E-mail"></div>
+		<div class="l2" style="margin-right : 87px">
+		<label  for="contact">contact</label><br><br>
+		<input  type="text" name="contact" placeholder="Contact"></div>
+		<div class="l3">
+		<label  for="address">Address</label><br><br>
+		<input  type="text" name="address" placeholder="Address"></div>
+		<p class="par">Car Details</p>
+		<div class="l2" >
+		<label  for="model">Model</label><br><br>
+		<input  type="text" name="model" placeholder="Model"></div>
+        <div class="l2" style="margin-right : 87px">
+        <label  for="brand">Brand</label><br><br>
+		<input  type="text" name="brand" placeholder="Brand"></div>
+		<div class="l4">
+		<label  for="Battery">Battery Capacity</label><br><br>
+		<input  type="text" name="Battery" placeholder="Battery Capacity"></div>
+		<div class="l4" style="font-size:18px; margin-right: 40px;">
+		<label  for="vin">Vehicle Identification Number</label><br><br>
+		<input  type="text" name="vin" placeholder="Vehicle Identification Number"></div>
+		<div class="l5">
+		<label for="connector-type">Connector type</label><br><br>
+            <select name="connector-type" required >
+                <option value="" >Select option</option>
+                <option value="Type 1 (J1772)" >Type 1 (J1772)</option>
+                <option value="Type 2 (Mennekes)">Type 2 (Mennekes)</option>
+                <option value="CHAdeMO">CHAdeMO</option>
+                <option value="CCS (Combined Charging System)">CCS (Combined Charging System)</option>
+                <option value="Tesla Supercharger Connector">Tesla Supercharger Connector</option>
+                <option value="GB/T (Guan Biao/T-Plug)">GB/T (Guan Biao/T-Plug)</option>
+                <option value="IEC 60309 (Industrial Red/Blue Plugs)">IEC 60309 (Industrial Red/Blue Plugs)</option>
+                <option value="GB/T 20234.2-2011">GB/T 20234.2-2011</option>
+                <option value="Three-Phase">Three-Phase</option>
+                <option value="Single-Phase">Single-Phase</option>
+            </select></div>
+			<p class="par">Authentication and Security</p>
+			<div class="l2" >
+			<label  for="password">Password</label><br><br>
+			<input  type="text" name="password" placeholder="Password"></div>
+			<div class="l2" style="margin-right : 87px">
+				<label  for="username">Username</label><br><br>
+				<input  type="text" name="username" placeholder="Username"><br><br></div>
+			<button class="b1">Submit</button><a href="login">Back to login</a>
+			</form>
+	</body>
+</html>

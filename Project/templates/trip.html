@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trip planner</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sen&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/css/header-footer.css" />
+    <link rel="stylesheet" href="/static/css/trip-planner.css" />
+    <link rel="stylesheet" href="/static/css/general.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+
+    <script src="/static/js/trip-planner-backend.js"></script>
+  </head>
+  <body>
+    <div class="top">
+      <a href="home"><button class="back">&larr;</button></a>
+      <span class="logo">Plug & Power</span>
+    </div>
+    <div class="trip-planner-div1">
+      <div class="trip-planner-div1-container">
+        <h1>Let's Make Your <span>Best Trip Ever</span></h1>
+        <p>
+          Welcome to Your Ultimate Trip Planner! Discover, plan, and embark on
+          unforgettable journeys with our intuitive platform designed to make
+          your travel dreams a reality.
+        </p>
+        <a href="#Discover_now"><button>DISCOVER NOW</button></a>
+      </div>
+    </div>
+    <div class="trip-planner-div2">
+      <div class="trip-planner-div2-container1">
+        <h1 id="Discover_now">
+          <span>Navigating Your Path :</span> Innovative Route Generator for
+          Seamless Journeys
+        </h1>
+        <p>
+          Embark on seamless journeys with our cutting-edge route generator,
+          designed to navigate your path with innovation. Discover efficiency
+          and convenience like never before as you explore the world with ease.
+        </p>
+        <form class="from-to-form">
+          <div class="trip-planner-flex-row">
+            <div>
+              <label>From</label>
+              <input
+                type="text"
+                placeholder="Enter Your Orgin"
+                id="source"
+                required
+              />
+            </div>
+            <div>
+              <label>To</label>
+              <input
+                type="text"
+                placeholder="Enter Your Destination"
+                id="destination"
+                required
+              />
+            </div>
+          </div>
+          <a href="#map">
+          <input
+            type="button"
+            onclick="finder()"
+            value="Explore Now"
+            class="bnt-explore"
+          />
+          </a>
+        </form>
+        <p id="errormessage2"></p>
+      </div>
+      <div class="trip-planner-div2-container2">
+        <img
+          src="static\explore.jpg"
+          alt="explore"
+          height="500px"
+          width="500px"
+        />
+      </div>
+    </div>
+    <div class="div-map">
+      <div id="map" style="width: 70%; height: 400px"></div>
+      <script>
+        var map = L.map("map").setView([23, 78], 4);
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          attribution: "&copy; OpenStreetMap contributors",
+        }).addTo(map);
+      </script>
+    </div>
+    <div class="trip-planner-div2">
+      <div class="trip-planner-div2-container2">
+        <img
+          src="static\trip-planner-fuel.jpg"
+          alt="explore"
+          height="500px"
+          width="500px"
+        />
+      </div>
+      <div class="trip-planner-div2-container1">
+        <h1>
+          <span> PowerFind :</span> Empowering Your Drive with Nearby EV Charge
+          Station Locator
+        </h1>
+        <p>
+          Elevate your electric driving experience with PowerFind ; your
+          ultimate companion for locating nearby EV charge stations. Take
+          control of your journey, enjoy peace of mind, and recharge hassle-free
+          with this innovative locator at your fingertips.
+        </p>
+        <form class="from-to-form">
+          <input
+            type="button"
+            value="Find Now"
+            class="bnt-explore"
+            onclick="showNearbyChargingStations();"
+          />
+        </form>
+      </div>
+    </div>
+    <div class="trip-planner-div2">
+      <div class="trip-planner-div2-container1 cost-finder">
+        <h1>Estimate Your <span>EV Charging Costs:</span></h1>
+        <p>
+          Predict your EV charging costs easily. Consider electricity rates,
+          charging time, and vehicle model for smart charging decisions. Get
+          started now for a clear financial picture.
+        </p>
+        <p>Your Battery capacity is <span id="total">24</span>kWh</p>
+        <form class="from-to-form percentage-class">
+          <div>
+            <label for="percentage">Percentage</label>
+            <input
+              type="number"
+              placeholder="Battery percentage"
+              required
+              name="percentage"
+              min="0"
+              max="100"
+              id="remain"
+            />
+          </div>
+
+          <input
+            type="button"
+            value="Find Now"
+            class="bnt-explore"
+            onclick="cost()"
+          />
+        </form>
+        <p id="errormessage"></p>
+      </div>
+    </div>
+    <script></script>
+    <div class="div3">
+      <div class="div3-details">
+        <img src="static/distance_cover.png" alt="laptop" />
+        <p
+          style="
+            color: #20c997;
+            font-size: 16px;
+            width: 170px;
+            text-align: center;
+          "
+          id="distance_cover"
+        ></p>
+      </div>
+      <div class="div3-details">
+        <img src="static/kilowatts_required.png" alt="laptop" />
+        <p
+          style="
+            color: #7950f2;
+            font-size: 16px;
+            width: 170px;
+            text-align: center;
+          "
+          id="kilowatt_requied"
+        ></p>
+      </div>
+      <div class="div3-details">
+        <img src="static/cost.png" alt="laptop" />
+        <p
+          style="
+            color: #fa5252;
+            text-align: center;
+            font-size: 16px;
+            width: 170px;
+          "
+          id="cost_balance_distance_kilowatt"
+        ></p>
+      </div>
+    </div>
+    <div class="div6">
+      <div class="div6-section1">
+        <div class="div6-section1-container">
+          <div class="div6-section1-detail1">
+            <h2>Stay Updated</h2>
+            <input type="Email" placeholder="Email Address" />
+            <button>Subscribe</button>
+          </div>
+          <div class="div6-section1-detail2">
+            <h2>Let's Get Social</h2>
+            <div class="social-media">
+              <button class="facebook">
+                <img src="static/facebook.png" alt="facebook" />
+              </button>
+              <button class="instagram">
+                <img src="static/instagram.png" alt="instagram" />
+              </button>
+              <button class="google">
+                <img src="static/google.png" alt="goggle" />
+              </button>
+              <button class="youtube">
+                <img src="static/youtube.png" alt="youtube" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="div6-section2">
+        <div class="div6-section2-details">
+          <h2>About Us</h2>
+          <p>Innovation</p>
+          <p>Customer-Centric</p>
+          <p>Partner</p>
+          <p>Excellence</p>
+        </div>
+        <div class="div6-section2-details">
+          <h2>Support</h2>
+          <p>Contact Us</p>
+          <p>Site - feedback</p>
+          <p>Requirements</p>
+        </div>
+        <div class="div6-section2-details">
+          <h2>Service</h2>
+          <p>Trip Planner</p>
+          <p>Station status</p>
+          <p>Rewards</p>
+        </div>
+      </div>
+      <hr />
+      <div class="footer">
+        <p>Copyright ©2023 All rights reserved</p>
+      </div>
+    </div>
+  </body>
+</html>

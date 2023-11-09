@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap"
+      rel="stylesheet"
+    >
+    <title>login</title>
+    <link rel="stylesheet" href="/static/css/login.css">
+  </head>
+  <body>
+    <h1 style="margin-left:400px">{{msg}}</h1>
+    <div class="login-container">
+      <div class="border">
+        <h3 class="master-tittle">Login</h3>
+        <div class="login-details">
+          <a href="/register" style="text-decoration: none;"><h4 class="subtittle">Have an account?</h4></a>
+          <form class="login-form" action="{{url_for('login') }}" method="POST">
+            <input
+              type="text"
+              name="userid"
+              placeholder="User Id"
+              id="userid"
+            /><br />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            /><br />
+            <button class="signin-button">SIGN IN</button><br />
+          </form>
+
+          <div class="others1">
+            <input
+              type="checkbox"
+              name="Remember-me"
+              style="vertical-align: middle"
+            />
+            <label
+              for="Remember-me"
+              class="remember"
+              style="color: #030431; vertical-align: middle"
+              >Remember me</label
+            >
+            <a href="#" class="forgot-link">Forgot Password?</a>
+          </div>
+          <div class="others2">
+            <p class="otherways" style="color: #030431">— Or Sign In With —</p>
+            <div class="others2-buttons">
+              <button class="Google">
+                <img
+                  src="/static/google.png"
+                  height="15px"
+                  style="margin-right: 10px; vertical-align: middle"
+                />
+                <p
+                  style="
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin: 0px;
+                  "
+                >
+                  Google
+                </p>
+              </button>
+              <button class="facebook">
+                <img
+                  src="/static/facebook.png"
+                  height="20px"
+                  style="margin-right: 10px; vertical-align: middle"
+                />
+                <p
+                  style="
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin: 0px;
+                  "
+                >
+                  Facebook
+                </p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

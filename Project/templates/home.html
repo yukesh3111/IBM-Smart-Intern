@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sen&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="/static/css/general.css" rel="stylesheet" />
+    <link href="/static/css/div1.css" rel="stylesheet" />
+    <link href="/static/css/div2.css" rel="stylesheet" />
+    <link href="/static/css/div3.css" rel="stylesheet" />
+    <link href="/static/css/div4.css" rel="stylesheet" />
+    <link href="/static/css/div5.css" rel="stylesheet" />
+    <link href="/static/css/div6.css" rel="stylesheet" />
+    <script src="/static/js/start.js"></script>
+  </head>
+  <body>
+    <div class="top">
+      <span class="logo1" onclick="openNav()">&#9776;</span>
+      <span class="logo">Plug & Power</span>
+      <span class="sidelab">{{name}}'s Acc</span>
+      <a href="trip"><button class="b2">Nearby station</button></a>
+    </div>
+
+    <div id="sidep" class="opt">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <ul class="opt1">
+        <li class="list"><a href="trip">Trip Planner</a></li>
+        <li class="list"><a href="fav1">Favorite Station</a></li>
+        <li class="list"><a href="reserve">Make A Reservation</a></li>
+        <li class="list"><a href="status">Station Status</a></li>
+        <li class="list"><a href="history">Charging History</a></li>
+        <li class="list"><a href="prof">Profile</a></li>
+        <li class="list"><a href=" get">Logout</a></li>
+      </ul>
+    </div>
+    <div class="div1-details">
+      <div class="div1-details-content">
+        <h2>Welcome to Plug & Power!</h2>
+        <div>
+          <h4>Your One-Stop Solution for Electric Vehicle Charging</h4>
+          <p>
+            We're dedicated to simplifying your EV charging experience. With our
+            strategically placed charging stations, you can hit the road with
+            confidence, knowing that a hassle-free charge is just a click away.
+          </p>
+          <button>Get Started</button>
+        </div>
+      </div>
+      <div class="div1-div-img">
+        <img src="static/heroman.png" alt="hero" class="div1-img" />
+      </div>
+    </div>
+
+    <div class="div2">
+      <div class="div2-tittle">
+        <h2>Our Services</h2>
+        <p>Empowering Your Electric Journey</p>
+      </div>
+      <div class="div2-upper-container">
+        <div class="div2-container-details">
+          <img src="static/fast.png" alt="fast" height="40px" />
+          <h3>Fast and Reliable Charging Stations</h3>
+          <a href="view">
+          <p class="div2-container-details-para">
+            Our charging stations are strategically located to provide you with
+            quick and reliable charging options, ensuring you can get back on
+            the road in no time.
+          </p></a>
+          <a href="#" class="div2-container-details-a">Read more ></a>
+        </div>
+
+        <a href="status"><div class="div2-container-details">
+          <img src="static/station.png" alt="station" height="40px" />
+          <h3>Station Status</h3>
+          <p class="div2-container-details-para">
+            Introducing our innovative virtual queue system for busy charging
+            stations. Join remotely, receive notifications, and enjoy reduced
+            waiting times for a seamless charging experience
+          </p>
+          <a href="#" class="div2-container-details-a">Read more ></a>
+        </div></a>
+
+        <div class="div2-container-details">
+          <img src="static/reward.png" alt="reward" height="40px" />
+          <h3>Rewards</h3>
+          <p class="div2-container-details-para">
+            Charge up and earn rewards with every electric mile! Enjoy exclusive
+            perks, discounts, and eco-friendly incentives as you power your
+            journey with us.
+          </p>
+          <a href="#" class="div2-container-details-a">Read more ></a>
+        </div>
+      </div>
+
+      <div class="div2-upper-container">
+        <div class="div2-container-details">
+          <img src="static/plan.png" alt="Plan" height="40px" />
+          <h3>Charging Plans</h3>
+          <p class="div2-container-details-para">
+            Choose from a range of flexible charging plans that suit your needs.
+            Whether you're a daily commuter or a road trip enthusiast, we have
+            the right plan for you.
+          </p>
+          <a href="#" class="div2-container-details-a">Read more ></a>
+        </div>
+
+        <div class="div2-container-details">
+          <img src="static/trip.png" alt="trip" height="40px" />
+          <a href="trip"><h3>Trip Planner</h3>
+          <p class="div2-container-details-para">
+            Choose from a range of flexible charging plans that suit your needs.
+            Whether you're a daily commuter or a road trip enthusiast, we have
+            the right plan for you.
+          </p></a>
+          <a href="#" class="div2-container-details-a">Read more ></a>
+        </div>
+
+        
+        <a href="view"><div class="div2-container-details">
+          <img src="static/reservation.png" alt="reservation" height="40px" />
+          <h3>Make a Reservation</h3>
+          <p class="div2-container-details-para">
+            Take control of your charging schedule. Our reservation system
+            ensures you're in charge of when and how you power up.Wave goodbye
+            to waiting.
+          </p>
+          <a href="#" class="div2-container-details-a">Read more ></a>
+        </div>
+      </div>
+
+      <div class="div3">
+        <div class="div3-details">
+          <img src="static/staion1.png" alt="laptop" />
+          <p style="color: #20c997">6500 + Stations</p>
+        </div>
+        <div class="div3-details">
+          <img src="static/user.png" alt="laptop" />
+          <p style="color: #7950f2">13L + EV User</p>
+        </div>
+        <div class="div3-details">
+          <img src="static/icons8-service-center-64 (1).png" alt="laptop" />
+          <p style="color: #fa5252">7500+ Service Center</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="div5">
+      <div class="div5-container1">
+        <p class="sub-tittle">More About Our Company</p>
+        <h1 class="tittle">Want to know more</h1>
+        <p class="discription">
+          We're driven by a single purpose - to accelerate the transition to a
+          sustainable and electrified future. We're committed to making electric
+          vehicle charging accessible, convenient, and reliable for all.
+        </p>
+        <ul class="list1">
+          <li>
+            <img src="static/blub.png" alt="blub" height="35px" />
+            <p>Innovation at Heart</p>
+          </li>
+          <li>
+            <img
+              src="static/costumer-service.png"
+              alt="costumer-care"
+              height="35px"
+            />
+            <p>Customer-Centric Approach</p>
+          </li>
+          <li>
+            <img src="static/parter.png" alt="graduate" height="35px" />
+            <p>Partnering for Change</p>
+          </li>
+          <li>
+            <img
+              src="static/check-note.png"
+              alt="check-note"
+              height="35px"
+            />Sustainability Commitment
+          </li>
+        </ul>
+        <button class="div5-button">More About Us</button>
+      </div>
+      <div class="div5-container2">
+        <img src="static/about1.png" alt="about" class="img1" />
+        <img src="static/about2.png" alt="about" class="img2" />
+      </div>
+    </div>
+
+    <div class="div6">
+      <div class="div6-section1">
+        <div class="div6-section1-container">
+          <div class="div6-section1-detail1">
+            <h2>Stay Updated</h2>
+            <input type="Email" placeholder="Email Address" />
+            <button>Subscribe</button>
+          </div>
+          <div class="div6-section1-detail2">
+            <h2>Let's Get Social</h2>
+            <div class="social-media">
+              <button class="facebook">
+                <img src="static/facebook.png" alt="facebook" />
+              </button>
+              <button class="instagram">
+                <img src="static/instagram.png" alt="instagram" />
+              </button>
+              <button class="google">
+                <img src="static/google.png" alt="goggle" />
+              </button>
+              <button class="youtube">
+                <img src="static/youtube.png" alt="youtube" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="div6-section2">
+        <div class="div6-section2-details">
+          <h2>About Us</h2>
+          <p>Innovation</p>
+          <p>Customer-Centric</p>
+          <p>Partner</p>
+          <p>Excellence</p>
+        </div>
+        <div class="div6-section2-details">
+          <h2>Support</h2>
+          <p>Contact Us</p>
+          <p>Site - feedback</p>
+          <p>Requirements</p>
+        </div>
+        <div class="div6-section2-details">
+          <h2>Service</h2>
+          <p>Trip Planner</p>
+          <p>Station status</p>
+          <p>Rewards</p>
+        </div>
+      </div>
+      <hr />
+      <div class="footer">
+        <p>Copyright ©2023 All rights reserved</p>
+      </div>
+    </div>
+  </body>
+</html>

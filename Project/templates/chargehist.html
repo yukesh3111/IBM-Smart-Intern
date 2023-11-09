@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Favorite</title>
+    <link rel="stylesheet" href="/static/css/station-status.css" />
+    <link rel="stylesheet" href="/static/css/general.css" />
+    <link rel="stylesheet" href="/static/css/header-footer.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sen&display=swap"
+      rel="stylesheet"
+    />
+    <script src="navbar.js"></script>
+  </head>
+  <body>
+    <div class="top">
+      <a href="home"><button class="back">&larr;</button></a>
+      <span class="logo">Plug & Power</span>
+    </div>
+    <div class="favorite-container">
+      <div class="favorite-tittle">
+        <h1>Charging History</h1>
+      </div>
+      <div>
+        <table class="favorite">
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Name</th>
+            <th>Slot</th>
+            <th>Port</th>
+            <th>Consumed</th>
+            <th>Required(hrs)</th>
+          </tr>
+            {%with a=l,cd=cd,ct=ct%}
+          {%for i in range(0,n)%}
+          {%with a1=a[i][0],a2=a[i][1]%}
+          <tr>
+            {%for j in range(0,7)%}
+            {%if a1<cd%}
+            <td>{{a[i][j]}}</td>     
+            {%endif%}     
+            {%endfor%}
+            {%endwith%}
+          </tr>
+          {%endfor%}
+          {%endwith%}
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
